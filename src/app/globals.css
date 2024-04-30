@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../components/Animation.css";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+/* 
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  /* background: url("../assets/running-horse-once.gif") no-repeat bottom; */
+  /* background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-repeat: no-repeat; */
+  /* //NEW */
+  /* height: calc(100vh - 230px); */
+  height: 100vh;
+  color: #505260;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  position: relative;
+  background-color: #d4d4d6;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+#homepage:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 90%
+  ); */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgb(212, 212, 214) 90%
+  );
+  background-color: linear-gradient(
+    to bottom,
+    rgb(212 212 214 / 55%) 100%,
+    rgba(255, 255, 255, 0)
+  );
+  width: 100%;
+  height: 4em;
+}
+
+#content:after {
+  content: "";
+  position: sticky;
+  display: inline-block;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgb(212, 212, 214) 90%
+  ); */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgb(212, 212, 214) 118%
+  );
+  width: 100%;
+  height: 4em;
+}

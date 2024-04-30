@@ -1,0 +1,96 @@
+.fa-beat-hover:hover {
+  -webkit-animation: fa-beat 2s infinite linear;
+  -moz-animation: fa-beat 2s infinite linear;
+  -o-animation: fa-beat 2s infinite linear;
+  animation: fa-beat 2s infinite linear;
+  color: black;
+}
+
+.color-hover:hover {
+  color: black;
+}
+
+/* @keyframes moveTopLeft {
+  0% {
+    transform: translateY(33vh) translateX(59vh) scale(3);
+    transform-origin: center;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%) translateX(0%) scale(1);
+    opacity: 1;
+    transform-origin: center;
+  }
+}
+
+.move-top-left {
+  animation: 3s moveTopLeft ease-in-out 2s;
+  display: inline-block;
+} */
+
+.center-large {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -160%) scale(3);
+  transform: translate(-50%, -160%) scale(3);
+}
+
+@keyframes moveTopLeft {
+  0% {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -160%) scale(3);
+    transform: translate(-50%, -160%) scale(3);
+  }
+  100% {
+    position: fixed;
+    transform: scale(1);
+  }
+}
+
+.move-top-left {
+  animation: 3s moveTopLeft ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: 2s fadeIn linear;
+  display: inline-block;
+}
+
+.fade-in-box::before {
+  content: "";
+  background-color: #d4d4d6;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 96px;
+  animation: 2s fadeInBox linear;
+  opacity: 0;
+  z-index: -1;
+}
+
+@keyframes fadeInBox {
+  0% {
+    opacity: 1;
+    z-index: 40;
+  }
+  99% {
+    z-index: 40;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
