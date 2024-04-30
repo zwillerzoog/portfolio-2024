@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 
 import headshot from "../assets/headshot_pic.jpeg";
@@ -15,10 +16,7 @@ export default function AboutMe() {
   let assignedClass = showIntiial ? "hidden" : "fade-in";
 
   return (
-    <div
-       className={"m-auto w-full" + assignedClass}
-      id="about"
-    >
+    <div className={"m-auto w-full" + assignedClass} id="about">
       <div className="max-w-xl m-auto">
         <img className="headshot" src={headshot.src} alt="Heidi headshot" />
         <p className="about">
