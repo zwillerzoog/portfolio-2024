@@ -105,7 +105,8 @@ export default function Work() {
         <WorkTitle title="Current Fun Projects" time="Forever" />
         <Project
           title="This Website!"
-          description={`My portfolio website AKA the website you are currently using. I built this with Next.js and the help of some useful CSS animations`}
+          description={`My portfolio website AKA the website you are currently using. I built this with Next.js and 
+          created the animations with CSS`}
           techList={["React", "Next.js", "Typescript", "Tailwind", "Jest"]}
         />
         <Project

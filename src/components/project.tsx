@@ -12,10 +12,7 @@ export default function Work(props: any) {
   return (
     <div className={"mt-8 m-auto" + lastPadding}>
       <div className="flex justify-between">
-        <h3
-          className="text-lg font-semibold mb-2"  >
-          {props.title}
-        </h3>
+        <h3 className="text-lg font-semibold mb-2">{props.title}</h3>
         {props.link && (
           <a href={props.link} target="_blank">
             <FontAwesomeIcon
@@ -44,8 +41,8 @@ export default function Work(props: any) {
       </div>
       <div>
         {props.techList &&
-          props.techList.map((tech: string) => (
-            <Chip className={"mr-2 mt-2"} label={tech} />
+          props.techList.map((tech: string, i: number) => (
+            <Chip className={"mr-2 mt-2"} label={tech} key={tech + i} />
           ))}
       </div>
     </div>

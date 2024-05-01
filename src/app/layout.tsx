@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import Head from "next/head";
-import dynamic from 'next/dynamic';
 import { Inter } from "next/font/google";
 import Header from "./header";
 import Timer from "./Timer";
-import FontAwesomeKit from "../components/Head";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
@@ -21,7 +18,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <FontAwesomeKit />
       <body className={inter.className}>
         <Timer>
           <Header />

@@ -16,7 +16,7 @@ export default function Home(props: any) {
     <div className="absolute top-0 bottom-0 left-0 right-0">
       {!showIntiial && (
         <>
-          <div className="fade-in m-auto w-full absolute top-[98px] bottom-[95px] overflow-y-auto pr-5 pl-5">
+          <div className="fade-in m-auto w-full absolute top-[98px] bottom-[95px] overflow-y-auto pr-5 pl-5 bg-c-[#d2d4d8bd]">
             <About />
             <Work />
           </div>
