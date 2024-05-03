@@ -11,7 +11,7 @@ export default function Contact() {
   let animationStyle: string = "";
 
   return (
-    <div className="contact flex justify-around">
+    <div className="contact flex justify-around w-fit md:float-right md:mr-4">
       <div className={style.iconWrap}>
         <a href="mailto:marsh.heidi.c@gmail.com">
           <FontAwesomeIcon
@@ -20,7 +20,6 @@ export default function Contact() {
             color="#505260"
             className="fa-beat-hover"
           />
-          {/* <p className={style.p}>Email Me!</p> */}
         </a>
       </div>
       <div className={style.iconWrap}>
@@ -31,7 +30,6 @@ export default function Contact() {
             color="#505260"
             className="fa-beat-hover"
           />
-          {/* <p className={style.p}>Connect with me on linkedIn</p> */}
         </a>
       </div>
       <div className={style.iconWrap}>
@@ -42,7 +40,6 @@ export default function Contact() {
             color="#505260"
             className="fa-beat-hover"
           />
-          {/* <p className={style.p}>See my work on Github!</p> */}
         </a>
       </div>
     </div>
