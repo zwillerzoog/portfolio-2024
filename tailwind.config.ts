@@ -30,6 +30,8 @@ const config: Config = {
   variants: {
     extend: {
       display: ["group-hover"],
+      textColor: ["group-hover"],
+      animation: ["group-hover"],
     },
   },
 };

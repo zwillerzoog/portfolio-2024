@@ -10,7 +10,7 @@ export default function AboutMe() {
   useEffect(() => {
     setTimeout(() => {
       setInitial(false);
-    }, 2000);
+    }, 3500);
   });
 
   let assignedClass = showIntiial ? "hidden" : "fade-in";
@@ -19,7 +19,7 @@ export default function AboutMe() {
     <div className={"m-auto w-full" + assignedClass} id="about">
       <div className="max-w-xl m-auto">
         <img className="headshot" src={headshot.src} alt="Heidi headshot" />
-        <p className="about">
+        <p className="about text-sm md:text-base">
           Hi! I'm Heidi. I'm a Frontend Engineer with a passion for frontend and
           design. I have 6 years of experience in the government space where I
           make accessible, and user-friendly React websites. <br /> <br />

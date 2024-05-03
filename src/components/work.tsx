@@ -17,7 +17,9 @@ export default function Work() {
       // className="fixed bottom-30 left-0 right-0 h-[77.5vh] overflow-y-auto"
     >
       <div className="max-w-xl m-auto pt-20 mb-30">
-        <h3 className=" text-2xl font-semibold text-center">EXPERIENCE</h3>
+        <h3 className="mt-10 pt-10 text-2xl font-semibold text-center" id="experience">
+          EXPERIENCE
+        </h3>
         <WorkTitle title="Bellese Technologies" time="2020 - Present" />
         <Project
           title="Medical Equipment & Supplier Directory"
