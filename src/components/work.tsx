@@ -3,13 +3,6 @@ import WorkTitle from "../components/WorkTitle";
 import DME from "../assets/DME_homepage.png";
 
 export default function Work() {
-  const projectContainer = "max-w-[350px] mt-10 m-auto ";
-  const style = {
-    chip: "mr-2 mt-2",
-    h3: "text-lg font-semibold mb-2",
-    link: "font-medium mr-4 underline color-hover",
-    linkWrap: "h-7 flex ",
-  };
   return (
     <div
       id="work"

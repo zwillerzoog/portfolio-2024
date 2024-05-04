@@ -8,8 +8,6 @@ export default function Contact() {
     iconWrap: "group w-8 pr-5 pl-5",
   };
 
-  let animationStyle: string = "";
-
   return (
     <div className="contact flex justify-around w-fit md:float-right md:mr-4">
       <div className={style.iconWrap}>

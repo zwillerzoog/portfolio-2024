@@ -1,12 +1,10 @@
+import Image from "next/image";
 import { Chip } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Work(props: any) {
-  const style = {
-    link: "font-medium mr-4 underline color-hover",
-  };
   const lastPadding = props.last ? " mb-20" : "";
   return (
     <div className={"mt-8 m-auto" + lastPadding}>
@@ -30,7 +28,7 @@ export default function Work(props: any) {
         )}
       </div>
 
-      <img src={props.image} alt={props.imageAlt} />
+      <Image src={props.image} alt={props.imageAlt} />
       <p className="text-sm md:text-base">{props.description}</p>
       <div className="flex">
         {props.source && (

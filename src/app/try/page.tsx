@@ -1,4 +1,3 @@
-import Header from "../header";
 import AboutMe from "../../components/About";
 import Contact from "../../components/contact";
 import Work from "../../components/work";

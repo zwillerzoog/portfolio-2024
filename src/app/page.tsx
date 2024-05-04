@@ -1,19 +1,15 @@
 "use client";
 import { useState, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
 
 import About from "../components/About";
 import Work from "../components/work";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./page.css";
 import "./about/about.css";
 
-export default function Home(props: any) {
+export default function Home() {
   const [showIntiial, setInitial] = useState(true);
-  const router = usePathname();
-  const pathname = usePathname();
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,7 +35,6 @@ export default function Home(props: any) {
             </a>
             <Work />
           </div>
-          {/* <div id="content" className="fade-in" /> */}
         </>
       )}
     </div>

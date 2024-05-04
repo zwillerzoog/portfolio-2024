@@ -16,7 +16,7 @@ a:hover .fa-beat-hover,
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -160%) scale(1.5);
-  transform: translate(-50%, -160%)scale(1.5);
+  transform: translate(-50%, -160%) scale(1.5);
   z-index: 50;
 }
 
@@ -88,13 +88,15 @@ a:hover .fa-beat-hover,
   }
   100% {
     opacity: 1;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
 }
 
 .box-shadow {
   animation: 2s fadeInShadow linear;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }

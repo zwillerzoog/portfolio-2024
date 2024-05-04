@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { ThemeProvider } from 'acme-theme';
-import { AuthProvider } from 'acme-auth';
+import { ThemeProvider } from "acme-theme";
+import { AuthProvider } from "acme-auth";
 
 export function Providers({ children }) {
   return (

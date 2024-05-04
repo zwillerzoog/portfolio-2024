@@ -1,3 +1,32 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2024": true,
+    "node": true
+  },
+  "extends": ["next", "next/core-web-vitals", "prettier"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "tsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "requireConfigFile": false
+  },
+  "plugins": ["react", "typescript"],
+  "ignorePatterns": [
+    "temp.js",
+    "**/vendor/*.js",
+    "node_modules",
+    "**/node_modules/**",
+    "index.scss",
+    "**/*test.js",
+    "newrelic.js",
+    "build"
+  ],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off"
+  }
 }

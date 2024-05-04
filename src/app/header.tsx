@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 
 import Link from "next/link";
 import Contact from "../components/contact";
@@ -20,7 +20,7 @@ export default function Header(props: any) {
       }, 3500);
       setAnimationClass("");
     }
-  }, [showInitial]);
+  }, [showInitial, prevShow]);
 
   const displayMobile = () => {
     const showInitialProps = {
