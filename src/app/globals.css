@@ -34,11 +34,11 @@ body {
 } */
 
 body {
-  /* background: url("../assets/running-horse-once.gif") no-repeat bottom; */
-  /* background-size: cover;
+  background: url("../assets/running-horse-once.gif") no-repeat bottom;
+  background-size: cover;
   background-attachment: fixed;
   background-position-x: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   /* //NEW */
   /* height: calc(100vh - 230px); */
   height: 100vh;
