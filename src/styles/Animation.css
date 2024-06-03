@@ -7,6 +7,14 @@ a:hover .fa-beat-hover,
   color: black;
 }
 
+.fa-beat-hover:before {
+  content: "Hello";
+  position: absolute;
+  background-color: green;
+  height: 10px;
+  width: 10px;
+}
+
 .color-hover:hover {
   color: black;
 }

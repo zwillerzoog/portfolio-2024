@@ -7,7 +7,7 @@ export default function SiteTitle(props: any) {
   const creatWrapperClassName = useCallback(() => {
     if (!props.showInitial) {
       setClassName(
-        " md:absolute move-top-left top-0 bottom-0 left-4 right-0 z-50"
+        " md:fixed move-top-left top-0 bottom-0 left-4 right-0 z-50"
       );
     }
   }, [props.showInitial]);
@@ -19,7 +19,7 @@ export default function SiteTitle(props: any) {
   return (
     <div
       className={
-        "md:my-4 mt-4 text-center md:w-fit w-full h-fit inline-block md:min-w-[240px] " +
+        "z-50 md:my-4 mt-4 text-center md:w-fit w-full h-fit inline-block md:min-w-[240px]" +
         newClassName
       }
     >

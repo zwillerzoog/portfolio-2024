@@ -28,7 +28,9 @@ export default function Work(props: any) {
         )}
       </div>
 
-      <Image src={props.image} alt={props.imageAlt} />
+      {props.image && props.imageAlt && (
+        <Image src={props.image} alt={props.imageAlt} />
+      )}
       <p className="text-sm md:text-base">{props.description}</p>
       <div className="flex">
         {props.source && (
@@ -45,7 +47,11 @@ export default function Work(props: any) {
       <div>
         {props.techList &&
           props.techList.map((tech: string, i: number) => (
-            <Chip className={"mr-2 mt-2 text-sm md:text-base"} label={tech} key={tech + i} />
+            <Chip
+              className={"mr-2 mt-2 text-sm md:text-base"}
+              label={tech}
+              key={tech + i}
+            />
           ))}
       </div>
     </div>

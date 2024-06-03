@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import runningHorseOnce from "../assets/running-horse-once.gif";
 import Header from "./header";
+import FadeContainer from "../components/FadeContainer";
+import SiteTitle from "@/components/SiteTitle";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
@@ -15,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Image
+        {/* <Image
           alt="running horse background"
           src={runningHorseOnce}
           // placeholder="blur"
@@ -26,9 +28,12 @@ export default function RootLayout({
             objectFit: "cover",
           }}
           unoptimized={true}
-        />
-        <Header />
-        {children}
+        /> */}
+        <SiteTitle />
+        <FadeContainer>
+          <Header />
+          <>{children}</>
+        </FadeContainer>
       </body>
     </html>
   );

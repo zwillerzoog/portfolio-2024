@@ -4,13 +4,12 @@ import DME from "../assets/DME_homepage.png";
 
 export default function Work() {
   return (
-    <div
-      id="work"
-      className="mb-30"
-      // className="fixed bottom-30 left-0 right-0 h-[77.5vh] overflow-y-auto"
-    >
+    <div id="work" className="mb-30">
       <div className="max-w-xl m-auto pt-20 mb-30">
-        <h3 className="mt-10 pt-10 text-2xl font-semibold text-center" id="experience">
+        <h3
+          className="mt-10 pt-10 text-2xl font-semibold text-center"
+          id="experience"
+        >
           EXPERIENCE
         </h3>
         <WorkTitle title="Bellese Technologies" time="2020 - Present" />
