@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Image from "next/image";
+import runningHorseOnce from "../assets/running-horse-once.gif";
 import Header from "./header";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 const inter = Inter({ subsets: ["latin"] });
@@ -13,6 +15,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Image
+          alt="running horse background"
+          src={runningHorseOnce}
+          // placeholder="blur"
+          quality={100}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+          unoptimized={true}
+        />
         <Header />
         {children}
       </body>

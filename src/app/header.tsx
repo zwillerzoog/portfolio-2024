@@ -33,16 +33,16 @@ export default function Header(props: any) {
         {!showInitial && (
           <div
             className={
-              "w-screen relative box-shadow box z-20 bg-greyLight grid md:grid-cols-3 items-center justify-items-center md:justify-items-normal md:min-h-[100px] " +
+              "w-screen fixed box-shadow z-20 bg-greyLight grid md:grid-cols-3 items-center justify-items-center md:justify-items-normal md:min-h-[100px] " +
               animationClass
             }
           >
             <div className="hidden md:block"></div>
             <div className="hidden flex m-auto items-center md:inline-block">
-              <Link href="#about" className="m-2 color-hover">
+              <Link href="/" className="m-2 color-hover">
                 About Me
               </Link>
-              <Link href="#experience" className="m-2 color-hover">
+              <Link href="/experience" className="m-2 color-hover">
                 Experience
               </Link>
             </div>
